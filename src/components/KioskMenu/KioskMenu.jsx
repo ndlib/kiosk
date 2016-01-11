@@ -19,8 +19,10 @@ class KioskMenu extends Component {
   }
 
   handleClick(target, e){
+    e.preventDefault();
+    e.stopPropagation();
     store.dispatch(setContainerContent(target));
-    console.log(store.getState());
+    // console.log(store.getState());
     return {
     }
   }

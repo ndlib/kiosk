@@ -20,4 +20,3 @@ export default function initStore() {
     }
     return store;
 }
-

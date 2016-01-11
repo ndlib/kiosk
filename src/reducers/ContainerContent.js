@@ -2,6 +2,7 @@ import { SET_CONTAINER_CONTENT, DEFAULT, MAPS, DIRECTORY, CALL_NUMBERS, ROOM_RES
 
 export function containerContent(state=DEFAULT, action){
   if(action.type == SET_CONTAINER_CONTENT) {
+    console.log('SET STATE: ', action.content)
     state = action.content;
   }
   return state;

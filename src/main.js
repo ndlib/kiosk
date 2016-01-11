@@ -14,7 +14,7 @@ import storeManager from './store/storeManager.js';
 
 const routes = getRoutes();
 const store = storeManager();
-console.log(store.getState());
+
 ReactDOM.render(
     <Provider store={store}>
         {routes}

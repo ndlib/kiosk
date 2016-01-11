@@ -19,6 +19,7 @@ export const VISITOR_INFO = 'VISITOR_INFO';
  * Action creators
  */
  export function setContainerContent(content) {
+   console.log(content);
    return {
      type: SET_CONTAINER_CONTENT, content
    }

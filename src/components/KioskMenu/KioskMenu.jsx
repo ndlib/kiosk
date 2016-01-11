@@ -18,11 +18,11 @@ class KioskMenu extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(target, e){
+  handleClick(selectedItem, e){
     e.preventDefault();
     e.stopPropagation();
-    store.dispatch(setContainerContent(target));
-    // console.log(store.getState());
+    this.props.onMenuItemClick(selectedItem);
+    //store.dispatch(setContainerContent(selectedItem));
     return {
     }
   }
@@ -71,6 +71,10 @@ class KioskMenu extends Component {
       </Paper>
     );
   }
+}
+
+KioskMenu.propTypes = {
+  onMenuItemClick: PropTypes.func.isRequired,
 }
 
 export default KioskMenu;

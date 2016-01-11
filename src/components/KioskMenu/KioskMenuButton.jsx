@@ -23,7 +23,12 @@ class KioskMenuButton extends Component {
   render() {
     var menu;
     if(this.state.menuOpen) {
-      menu = (<KioskMenu params={ this.props.params }>MENU</KioskMenu>);
+      menu = (
+        <KioskMenu
+          params={ this.props.params }
+          onMenuItemClick={this.props.onMenuItemClick}
+        >MENU</KioskMenu>
+      );
     }
     return (
       <Row>
@@ -42,6 +47,9 @@ class KioskMenuButton extends Component {
       </Row>
     );
   }
+}
+KioskMenuButton.propTypes = {
+  onMenuItemClick: PropTypes.func.isRequired,
 }
 
 export default KioskMenuButton;

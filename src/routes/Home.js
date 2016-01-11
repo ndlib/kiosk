@@ -29,9 +29,7 @@ class Home extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      containerContent: store.getState().containerContent,
-    }
+    this.state = {containerContent: DEFAULT};
   }
 
   contentContainer() {
@@ -62,9 +60,9 @@ class Home extends Component {
     return content;
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log('test', this.state.containerContent,  store.getState().containerContent);
-    return this.state.containerContent !== store.getState().containerContent;
+  onMenuItemClick(selectedItem){
+    console.log('selectedItem', selectedItem);
+    this.setState({containerContent: selectedItem});
   }
 
   render() {
@@ -84,11 +82,17 @@ class Home extends Component {
           </Col>
           <Col params={ this.props.params }>
             <div className='top-button'>
-              <KioskMenuButton params={ this.props.params }>
+              <KioskMenuButton
+                params={ this.props.params }
+                onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
+              >
               </KioskMenuButton>
             </div>
             <div className='bottom-button'>
-              <KioskMenuButton params={ this.props.params }>
+              <KioskMenuButton
+                params={ this.props.params }
+                onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
+              >
               </KioskMenuButton>
             </div>
           </Col>

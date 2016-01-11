@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import areas from './areas.js'
+import { containerContent } from './ContainerContent.js'
 const rootReducer = combineReducers({
-  areas
+  containerContent
 });
 export default rootReducer;

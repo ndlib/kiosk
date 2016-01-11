@@ -16,14 +16,12 @@ import { CircularProgress } from 'material-ui';
 
 import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
 
-import { DEFAULT, MAPS, CALL_NUMBERS, DIRECTORY, HOURS, ROOM, VISITOR } from '../constants/AreaTypes.js';
-
 class Home extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      activeArea: DEFAULT,
+      
     };
   }
 

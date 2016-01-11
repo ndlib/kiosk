@@ -8,7 +8,7 @@ export const SET_CONTAINER_CONTENT = 'SET_CONTAINER_CONTENT';
  * Constant Values
  */
 export const DEFAULT = 'DEFAULT';
-export const MAPS = 'SMAPS';
+export const MAPS = 'MAPS';
 export const DIRECTORY = 'DIRECTORY';
 export const CALL_NUMBERS = 'CALL_NUMBERS';
 export const ROOM_RESERVATIONS = 'ROOM_RESERVATIONS';

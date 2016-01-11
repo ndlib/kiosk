@@ -10,6 +10,8 @@ import Col from '../components/FlexboxGrid/Col.jsx';
 import Box from '../components/FlexboxGrid/Box.jsx';
 
 import storeManager from '../store/storeManager.js';
+import { setContainerContent, DEFAULT, MAPS, DIRECTORY, CALL_NUMBERS, ROOM_RESERVATIONS, HOURS, VISITOR_INFO } from '../actions/MenuActions.js'
+const store = storeManager();
 
 import { Paper } from 'material-ui';
 import { CircularProgress } from 'material-ui';
@@ -21,7 +23,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
     };
   }
 

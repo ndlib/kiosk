@@ -71,13 +71,14 @@ class Home extends Component {
       <div>
         <Row params={ this.props.params }>
           <div>
-            Space At Top
+            <img src="/resources/library.logo.svg" className="logo"/>
           </div>
         </Row>
         <Row params={ this.props.params }>
           <Col params={ this.props.params }>
             <div id="target-area">
               {this.contentContainer()}
+              <img src="/resources/math.tutoring.jpg" />
             </div>
           </Col>
           <Col params={ this.props.params }>

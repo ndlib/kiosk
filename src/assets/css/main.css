@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900);
 
 html, body {
-  background-color: #ffffff;
+  background-color: #2B4779;
   font-size: 13px;
   height: 1920px;
   line-height: 20px;
@@ -13,15 +13,45 @@ html, body {
 #target-area {
   background-color: #000000;
   height: 1820px;
+  height: auto;
   width: 980px;
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
 }
+
+#target-area img {
+  width: 100%;
+  display: block;
+}
+
 .top-button {
   position: absolute;
-  right: 80px;
+  right: 0px;
   top: 30%;
 }
 .bottom-button {
   position: absolute;
-  right: 80px;
+  right: 0px;
   bottom: 30%;
+}
+
+.top-button button, .bottom-button button {
+  z-index: 40;
+}
+
+.top-button button i, .bottom-button button i {
+  transform:rotate(270deg);
+}
+
+.row {
+  margin-left:0;
+  margin-right:0;
+}
+
+.logo {
+  position: absolute;
+  top:0px;
+  right: 0;
+  padding:10px;
+  width:25%;
+  background: rgba(33,33,33,0.4);
 }

@@ -69,7 +69,7 @@ class Home extends Component {
 
     return (
       <div>
-        <Row params={ this.props.params }>
+        <Row params={ this.props.params } className='top-row'>
           <div>
             <img src="/resources/library.logo.svg" className="logo"/>
           </div>
@@ -98,7 +98,7 @@ class Home extends Component {
             </div>
           </Col>
         </Row>
-        <Row params={ this.props.params }>
+        <Row params={ this.props.params } className='bottom-row'>
           <div>
             Space At Bottom
           </div>

@@ -12,8 +12,7 @@ html, body {
 
 #target-area {
   background-color: #dddddd;
-  height: 1820px;
-  height: auto;
+  height: 1600px;
   width: 980px;
   box-shadow: 0 0 30px rgba(0,0,0,.6);
 }
@@ -53,5 +52,10 @@ html, body {
   right: 0;
   padding:10px;
   width:25%;
+
+}
+
+.top-row {
+  height: 107px;
   background: rgba(33,33,33,0.4);
 }

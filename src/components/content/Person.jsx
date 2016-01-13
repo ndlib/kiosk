@@ -4,7 +4,7 @@ class Person extends Component {
 
   render() {
     return (
-      <dl>
+      <dl className={this.props.rowStyle}>
         <dt>{this.props.fullName}</dt>
         <dd>{this.props.positionTitle}</dd>
         <dd>{this.props.location}</dd>
@@ -16,7 +16,8 @@ class Person extends Component {
 Person.propTypes = {
   fullName: PropTypes.string.isRequired,
   positionTitle: PropTypes.string,
-  location: PropTypes.sting
+  location: PropTypes.sting,
+  rowStyle: PropTypes.string,
 }
 
 export default Person;

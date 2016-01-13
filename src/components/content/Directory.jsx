@@ -14,6 +14,7 @@ class Directory extends Component {
             fullName={person.full_name}
             positionTitle={person.position_title}
             location={person.contact_information.campus_address}
+            rowStyle={index % 2 == 0 ? 'row-odd' : 'row-even'}
             key={index}
           />
         );
@@ -30,7 +31,7 @@ class Directory extends Component {
 
     render() {
       return (
-        <div style={this.style()}>
+        <div className="directory-listing" style={this.style()}>
           {this.people()}
         </div>
       );

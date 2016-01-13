@@ -10,7 +10,7 @@ class Hours extends Component {
     render() {
       console.log(this.props.service_points);
       return (
-        <div>
+        <div className="hours-listing">
           Hours
         </div>
       );

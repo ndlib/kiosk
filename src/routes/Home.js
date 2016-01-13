@@ -32,7 +32,7 @@ class Home extends Component {
     this.state = {
       containerContent: DEFAULT,
       people: null,
-      service_points: null
+      servicePoints: null
     };
   }
 
@@ -52,7 +52,7 @@ class Home extends Component {
         content = (<div>ROOM_RESERVATIONS</div>);
         break;
       case HOURS:
-        content = (<Hours service_points={this.state.service_points}/>);
+        content = (<Hours servicePoints={this.state.servicePoints}/>);
         break;
       case VISITOR_INFO:
         content = (<VisitorInformation/>);
@@ -75,7 +75,11 @@ class Home extends Component {
       url: 'https://api.library.nd.edu/1.0/locations/hours.json?auth_token=hours',
       dataType: 'json',
       success: function(result){
-        this.setState({service_points: result.service_points});
+        var servicePoints = [];
+        for(var servicePoint in result.service_points){
+          servicePoints.push(result.service_points[servicePoint]);
+        }
+        this.setState({servicePoints: servicePoints});
       },
       error: function(request, status, thrownError) {
         console.log('There was an error loading the hours data.');

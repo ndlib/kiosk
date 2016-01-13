@@ -78,7 +78,7 @@ class Home extends Component {
           <Col params={ this.props.params }>
             <div id="target-area">
               {this.contentContainer()}
-              <img src="/resources/math.tutoring.jpg" />
+              
             </div>
           </Col>
           <Col params={ this.props.params }>
@@ -101,6 +101,8 @@ class Home extends Component {
         <Row params={ this.props.params } className='bottom-row'>
           <div>
             Space At Bottom
+            
+
           </div>
         </Row>
       </div>

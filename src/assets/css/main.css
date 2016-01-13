@@ -52,10 +52,34 @@ html, body {
   right: 0;
   padding:10px;
   width:25%;
-
+  background: rgba(33,33,33,0.4);
 }
 
 .top-row {
-  height: 107px;
-  background: rgba(33,33,33,0.4);
+
+
+}
+
+.maps h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+}
+
+.floor {
+  padding:0 10% 0 30px;
+}
+
+.key {
+  padding:0 50% 0 30px;
+}
+
+.tower {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  top: 40%;
+  padding: 10px;
+  background: rgba(244,244,244,1);
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
 }

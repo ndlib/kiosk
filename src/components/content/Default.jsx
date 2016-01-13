@@ -10,7 +10,7 @@ class Default extends Component {
     render() {
       return (
         <div>
-          A big picture, probably an iFrame.
+          <img src="/resources/math.tutoring.jpg" />
         </div>
       );
     }

@@ -17,7 +17,7 @@ Person.propTypes = {
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
   positionTitle: PropTypes.string,
-  location: PropTypes.sting,
+  location: PropTypes.string,
   rowStyle: PropTypes.string,
 }
 

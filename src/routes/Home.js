@@ -29,18 +29,21 @@ class Home extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {containerContent: DEFAULT};
+    this.state = {
+      containerContent: DEFAULT,
+      people: null,
+      service_points: null
+    };
   }
 
   contentContainer() {
-    console.log("CONTENT CONTAINTER CALLED");
     let content = (<div>EMPTY</div>);
     switch(this.state.containerContent) {
       case MAPS:
         content = (<Maps/>);
         break;
       case DIRECTORY:
-        content = (<Directory/>);
+        content = (<Directory people={this.state.people} />);
         break;
       case CALL_NUMBERS:
         content = (<CallNumbers/>);
@@ -49,7 +52,7 @@ class Home extends Component {
         content = (<div>ROOM_RESERVATIONS</div>);
         break;
       case HOURS:
-        content = (<Hours/>);
+        content = (<Hours service_points={this.state.service_points}/>);
         break;
       case VISITOR_INFO:
         content = (<VisitorInformation/>);
@@ -61,8 +64,44 @@ class Home extends Component {
   }
 
   onMenuItemClick(selectedItem){
-    console.log('selectedItem', selectedItem);
     this.setState({containerContent: selectedItem});
+  }
+
+  loadHours() {
+    self = this;
+    $.ajax({
+      context: this,
+      type: 'GET',
+      url: 'https://api.library.nd.edu/1.0/locations/hours.json?auth_token=hours',
+      dataType: 'json',
+      success: function(result){
+        this.setState({service_points: result.service_points});
+      },
+      error: function(request, status, thrownError) {
+        console.log('There was an error loading the hours data.');
+      }
+    });
+  }
+
+  loadPeople() {
+    self = this;
+    $.ajax({
+      context: this,
+      type: 'GET',
+      url: 'https://api.library.nd.edu/1.0/people/library/all.json?auth_token=TxfhusubVZJFe91eAiPq',
+      dataType: 'json',
+      success: function(result){
+        this.setState({people: result.people});
+      },
+      error: function(request, status, thrownError) {
+        console.log('There was an error loading the directory data.');
+      }
+    });
+  }
+
+  componentWillMount() {
+    this.loadHours();
+    this.loadPeople();
   }
 
   render() {
@@ -78,7 +117,6 @@ class Home extends Component {
           <Col params={ this.props.params }>
             <div id="target-area">
               {this.contentContainer()}
-              <img src="/resources/math.tutoring.jpg" />
             </div>
           </Col>
           <Col params={ this.props.params }>

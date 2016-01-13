@@ -12,9 +12,10 @@ html, body {
 
 #target-area {
   background-color: #dddddd;
-  height: 1600px;
-  width: 980px;
   box-shadow: 0 0 30px rgba(0,0,0,.6);
+  height: 1600px;
+  overflow: hidden;
+  width: 980px;
 }
 
 #target-area img {

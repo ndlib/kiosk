@@ -9,9 +9,7 @@ class Default extends Component {
 
     render() {
       return (
-        <div>
-          A big picture, probably an iFrame.
-        </div>
+        <img src="/resources/math.tutoring.jpg" />
       );
     }
 }

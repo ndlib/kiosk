@@ -22,9 +22,6 @@ class KioskMenu extends Component {
     e.preventDefault();
     e.stopPropagation();
     this.props.onMenuItemClick(selectedItem);
-    //store.dispatch(setContainerContent(selectedItem));
-    return {
-    }
   }
 
   render() {

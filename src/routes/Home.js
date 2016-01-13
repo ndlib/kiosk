@@ -21,6 +21,7 @@ import Default from '../components/content/Default.jsx';
 import Maps from '../components/content/Maps.jsx';
 import Directory from '../components/content/Directory.jsx';
 import CallNumbers from '../components/content/CallNumbers.jsx';
+import RoomReservations from '../components/content/RoomReservations.jsx';
 import Hours from '../components/content/Hours.jsx';
 import VisitorInformation from '../components/content/VisitorInformation.jsx';
 import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
@@ -49,7 +50,7 @@ class Home extends Component {
         content = (<CallNumbers/>);
         break;
       case ROOM_RESERVATIONS:
-        content = (<div>ROOM_RESERVATIONS</div>);
+        content = (<RoomReservations/>);
         break;
       case HOURS:
         content = (<Hours servicePoints={this.state.servicePoints}/>);

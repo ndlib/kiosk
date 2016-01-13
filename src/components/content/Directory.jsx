@@ -11,7 +11,8 @@ class Directory extends Component {
       return this.props.people.map(function(person, index){
         return (
           <Person
-            fullName={person.full_name}
+            firstName={person.first_name}
+            lastName={person.last_name}
             positionTitle={person.position_title}
             location={person.contact_information.campus_address}
             rowStyle={index % 2 == 0 ? 'row-odd' : 'row-even'}

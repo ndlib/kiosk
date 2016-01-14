@@ -1,19 +1,66 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900);
 
+@font-face {font-family:NDIcons;
+  src:url('//www.nd.edu/assets/fonts/nd.eot');
+  src:url('//www.nd.edu/assets/fonts/nd.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/nd.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/nd.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/nd.svg#NDIcons') format('svg');
+}
+@font-face {font-family:GPCBook;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.svg#svgGPCBook') format('svg');
+}
+@font-face {font-family:GPCMed;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.svg#svgGPCMed') format('svg');
+}
+
+@font-face {font-family:GPMed;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolaris-Medium.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolaris-Medium.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-Medium.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-Medium.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-Medium.svg#svgGPCMed') format('svg');
+}
+
+@font-face {font-family:GPMedI;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolaris-MediumItalic.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolaris-MediumItalic.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-MediumItalic.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-MediumItalic.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-MediumItalic.svg#svgGPCMed') format('svg');
+
+}
+
+@font-face {font-family:GPBook;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolaris-Book.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolaris-Book.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-Book.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-Book.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolaris-Book.svg#svgGPCMed') format('svg');
+}
+
 html, body {
   background-color: #2B4779;
   font-size: 13px;
   height: 1920px;
-  line-height: 20px;
   margin: 0;
   padding: 0;
   width: 1080px;
+  font-family: GPMed, sans-serif;
 }
 
 #target-area {
   background-color: #dddddd;
   box-shadow: 0 0 30px rgba(0,0,0,.6);
-  height: 1600px;
+  height: 1742px;
   overflow: hidden;
   width: 980px;
 }
@@ -42,9 +89,22 @@ html, body {
   transform:rotate(270deg);
 }
 
+.directory-listing {
+  background: url(/resources/directory.jpg);
+  
+}
+
 .row {
   margin-left:0;
   margin-right:0;
+}
+
+.row-even {
+  background: rgba(244,244,244,.6);
+}
+
+.row-odd {
+  background: rgba(244,244,244,.8);
 }
 
 .logo {
@@ -84,3 +144,49 @@ html, body {
   background: rgba(244,244,244,1);
   box-shadow: 0 0 30px rgba(0,0,0,.6);
 }
+
+.room-reservations {
+    background: url(/resources/room.reservation.jpg);
+}
+
+.room-reservations * {
+  width: 100% !important;
+  height: auto !important;
+  line-height: auto !important;
+
+  background-size: cover;
+}
+
+.room-reservations ul {
+  width: 50% !important;
+  margin:0 auto;
+}
+
+.room-reservations li {
+  list-style: none;
+  margin-bottom:1em;
+}
+
+.room-reservations button {
+    width: 100% !important;
+    padding:15px !important;
+}
+
+.room-reservations span {
+
+  font-size: 30px !important;
+  height: auto !important;
+  text-align: center;
+
+}
+
+.service-point:nth-child(odd) {
+  clear: left;
+}
+
+.service-point {
+  padding:15px;
+  float: left;
+  width: 40%;
+}
+

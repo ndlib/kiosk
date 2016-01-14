@@ -12,12 +12,12 @@ class RoomReservations extends Component {
 
   handleClick(roomID, e) {
     console.log(e);
-    jQuery("#room" + roomID).LibCalRoomBooking({ "iid": 3037, "gid": roomID,  "width": 1080, "height": 1920 });
+    jQuery("#room" + roomID).LibCalRoomBooking({ "iid": 3037, "gid": roomID,  "width": 640, "height": 480 });
   }
 
   render() {
     return (
-      <div className='room-reservations'>
+      <div className='room-reservations' style={{display:"flex", flexDirection:'column', justifyContent:'center', height:'100%'}}>
         <ul>
           <li>
             <RaisedButton

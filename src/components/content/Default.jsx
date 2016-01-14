@@ -9,7 +9,9 @@ class Default extends Component {
 
     render() {
       return (
-        <img src="/resources/math.tutoring.jpg" />
+        <div>
+          <img src="/resources/math.tutoring.jpg" />
+        </div>
       );
     }
 }

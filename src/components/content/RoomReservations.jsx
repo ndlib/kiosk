@@ -11,7 +11,6 @@ class RoomReservations extends Component {
 
 
   handleClick(roomID, e) {
-    console.log(e);
     jQuery("#room" + roomID).LibCalRoomBooking({ "iid": 3037, "gid": roomID,  "width": 1080, "height": 1920 });
   }
 

@@ -25,7 +25,7 @@ class KioskMenuButton extends Component {
     if(this.state.menuOpen) {
       menu = (
         <KioskMenu
-          params={ this.props.params }
+          params={this.props.params}
           onMenuItemClick={this.props.onMenuItemClick}
         >MENU</KioskMenu>
       );

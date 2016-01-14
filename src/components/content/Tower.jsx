@@ -33,7 +33,7 @@ class Tower extends Component {
             backgroundColor={Styles.Colors.transparent}
             style={{left: 8}}>{floorNumber}</Avatar>
         }
-        secondaryText={floorText}
+        primaryText={floorText}
         disabled={true}
       />
     );
@@ -43,20 +43,20 @@ class Tower extends Component {
     return (
       <Paper>
         <List>
-          {this.floor('13', 'stuff')}
-          {this.floor('12', 'stuff')}
-          {this.floor('11', 'stuff')}
-          {this.floor('10', 'stuff')}
-          {this.floor('9', 'stuff')}
-          {this.floor('8', 'stuff')}
-          {this.floor('7', 'stuff')}
-          {this.floor('6', 'stuff')}
-          {this.floor('5', 'stuff')}
-          {this.floor('4', 'stuff')}
-          {this.floor('3', 'stuff')}
-          {this.floor('2', 'stuff')}
-          {this.floor('1', 'stuff')}
-          {this.floor('LL', 'stuff')}
+          {this.floor('13', 'Thirteenth Floor')}
+          {this.floor('12', 'Twelfth Floor')}
+          {this.floor('11', 'Eleventh Floor')}
+          {this.floor('10', 'Tenth Floor')}
+          {this.floor('9', 'Ninth Floor')}
+          {this.floor('8', 'Eighth Floor')}
+          {this.floor('7', 'Seventh Floor')}
+          {this.floor('6', 'Notre Dame Archives')}
+          {this.floor('5', 'Fifth Floor')}
+          {this.floor('4', 'Fourth Floor')}
+          {this.floor('3', 'Maintenance Floor')}
+          {this.floor('2', 'Second Floor')}
+          {this.floor('1', 'First Floor')}
+          {this.floor('LL', 'Lower Level')}
         </List>
       </Paper>
     );

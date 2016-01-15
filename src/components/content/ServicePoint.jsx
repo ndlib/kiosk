@@ -5,7 +5,7 @@ class ServicePoint extends Component {
   times(hours) {
     return hours.map(function(time, index){
       return (
-        <dd className='time-slot' key={index}>{time.days}: {time.hours}</dd>
+        <dd style={{fontSize:'20px', marginLeft:'2%'}} className='time-slot' key={index}>{time.days}: {time.hours}</dd>
       );
     });
   }
@@ -14,8 +14,8 @@ class ServicePoint extends Component {
     if(this.props.hours && this.props.hours.length > 0) {
       return (
         <div className="service-point" id={this.props.code}>
-          <dt>{this.props.name}</dt>
-          <dd className='phone-number'>{this.props.phone}</dd>
+          <dt style={{fontSize:'26px', fontWeight:'bold', marginBottom:'10px'}}>{this.props.name}</dt>
+          <dd style={{fontSize:'20px', marginLeft:'2%'}} className='phone-number'>{this.props.phone}</dd>
           {this.times(this.props.hours)}
         </div>
       );

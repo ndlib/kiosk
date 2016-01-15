@@ -27,6 +27,9 @@ class Directory extends Component {
         height: '100%',
         overflowX: 'hidden',
         overflowY: 'scroll',
+        padding: '20px',
+        marginBottom: '4em',
+        boxSizing: 'border-box'
       }
     }
 

@@ -31,7 +31,6 @@ class CallNumbers extends Component {
     }
 
     handleListClick(activeFloor) {
-      console.log(activeFloor);
       this.setState({activeFloor: activeFloor});
     }
 
@@ -68,7 +67,10 @@ class CallNumbers extends Component {
 
     callNumberButtons() {
       return (
-        <div className='call-number-buttons'>
+        <div
+          className='call-number-buttons'
+          style={{margin: '20px', textAlign: 'center'}}
+        >
           <RaisedButton
             id='books-by-subject-button'
             label='Books by Subject'

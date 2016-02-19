@@ -5,7 +5,7 @@ class ServicePoint extends Component {
   times(hours) {
     return hours.map(function(time, index){
       return (
-        <dd style={{fontSize:'20px', marginLeft:'2%'}} className='time-slot' key={index}>{time.days}: {time.hours}</dd>
+        <dd style={{fontSize:'20px', marginLeft:'2em', textIndent:'-1em'}} className='time-slot' key={index}>{time.days}: {time.hours}</dd>
       );
     });
   }

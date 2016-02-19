@@ -143,8 +143,8 @@ class Home extends Component {
           </Col>
         </Row>
         <Row params={ this.props.params } className='bottom-row'>
-          <div>
-            Space At Bottom
+          <div class="twitter">
+            
 
 
           </div>

@@ -53,16 +53,15 @@ html, body {
   height: 1920px;
   margin: 0;
   padding: 0;
-  width: 1080px;
   font-family: GPMed, sans-serif;
 }
 
 #target-area {
   background-color: #dddddd;
   box-shadow: 0 0 30px rgba(0,0,0,.6);
-  height: 1742px;
+  height: 1700px;
   overflow: hidden;
-  width: 980px;
+  width: 1200px;
 }
 
 #target-area img {
@@ -74,11 +73,12 @@ html, body {
   position: absolute;
   right: 0px;
   top: 30%;
+  display: none;
 }
 .bottom-button {
   position: absolute;
   right: 0px;
-  bottom: 30%;
+  bottom: 50%;
 }
 
 .top-button button, .bottom-button button {
@@ -91,6 +91,7 @@ html, body {
 
 .directory-listing {
   background: url(/resources/directory.jpg);
+  background-size: cover;
 
 }
 
@@ -109,7 +110,7 @@ html, body {
 
 .logo {
   position: absolute;
-  top:0px;
+  bottom:0px;
   right: 0;
   padding:10px;
   width:25%;
@@ -180,13 +181,35 @@ html, body {
 
 }
 
-.service-point:nth-child(odd) {
+/*
+.service-point:nth-child(3n+1) {
   clear: left;
 }
 
 .service-point {
   padding:15px;
   float: left;
-  width: 40%;
+  width: 30%;
+}*/
+
+#london, #computer_lab {
+  display:none;
 }
 
+.hours-listing {
+  display:flex;
+  flex-flow:row wrap;
+  padding:1vw;
+}
+
+.service-point {
+  width:31vw;
+  margin-right:1vw;
+}
+
+.service-point dt {
+  background:#fff;
+  padding:5px;
+  height: 2.6em;
+  line-height: 1.3;
+}

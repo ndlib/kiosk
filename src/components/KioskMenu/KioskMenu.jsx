@@ -8,7 +8,7 @@ import MenuItem from 'material-ui/lib/menus/menu-item';
 import FontIcon from 'material-ui/lib/font-icon';
 
 import storeManager from '../../store/storeManager.js';
-import { setContainerContent, DEFAULT, MAPS, DIRECTORY, CALL_NUMBERS, ROOM_RESERVATIONS, HOURS, VISITOR_INFO } from '../../actions/MenuActions.js'
+import { setContainerContent, DEFAULT, MAPS, DIRECTORY, SUBJECTS, CALL_NUMBERS, ROOM_RESERVATIONS, HOURS, VISITOR_INFO } from '../../actions/MenuActions.js'
 const store = storeManager();
 
 class KioskMenu extends Component {
@@ -36,7 +36,7 @@ class KioskMenu extends Component {
           />
           <MenuItem
             primaryText="Call Numbers"
-            leftIcon={(<i className="material-icons">local_library</i>)}
+            leftIcon={(<i className="material-icons">book</i>)}
             onTouchTap={this.handleClick.bind(this, CALL_NUMBERS)}
 
           />
@@ -44,6 +44,12 @@ class KioskMenu extends Component {
             primaryText="Directory"
             leftIcon={(<i className="material-icons">people</i>)}
             onTouchTap={this.handleClick.bind(this, DIRECTORY)}
+
+          />
+          <MenuItem
+            primaryText="Subject Librarians"
+            leftIcon={(<i className="material-icons">local_library</i>)}
+            onTouchTap={this.handleClick.bind(this, SUBJECTS)}
 
           />
           <MenuItem

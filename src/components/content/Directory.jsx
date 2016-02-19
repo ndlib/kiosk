@@ -15,6 +15,7 @@ class Directory extends Component {
             lastName={person.last_name}
             positionTitle={person.position_title}
             location={person.contact_information.campus_address}
+            phoneNumber={person.contact_information.phone_number}
             rowStyle={index % 2 == 0 ? 'row-odd' : 'row-even'}
             key={index}
           />

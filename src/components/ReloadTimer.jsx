@@ -11,7 +11,6 @@ class ReloadTimer extends Component {
   componentDidMount() {
     let start = this.props.startTime;
     this.timer = setInterval(this.tick.bind(this, start), 1000);
-    console.log(start, this.state.elapsed, Date.now());
   }
 
   componentWillUnmount(){

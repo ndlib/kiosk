@@ -143,9 +143,9 @@ class Home extends Component {
           </Col>
         </Row>
         <Row params={ this.props.params } className='bottom-row'>
-          <div class="twitter">
-            
-
+          <div className="social">
+            <p><img src="/resources/twitter.svg" /> twitter.com/ndlibraries</p>
+            <p><img src="/resources/facebook.svg" /> facebook.com/hesburghlibraries</p>
 
           </div>
         </Row>

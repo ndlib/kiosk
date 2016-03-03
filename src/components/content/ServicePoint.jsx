@@ -13,9 +13,9 @@ class ServicePoint extends Component {
   render() {
     if(this.props.hours && this.props.hours.length > 0) {
       return (
-        <div className="service-point" id={this.props.code}>
-          <dt style={{fontSize:'26px', fontWeight:'bold', marginBottom:'10px'}}>{this.props.name}</dt>
-          <dd style={{fontSize:'20px', marginLeft:'2%'}} className='phone-number'>{this.props.phone}</dd>
+        <div className="service-point panel panel-default" id={this.props.code}>
+          <dt className="panel-heading" style={{fontSize:'26px', fontWeight:'bold', marginBottom:'10px'}}>{this.props.name}</dt>
+          <dd className="panel-body" style={{fontSize:'20px', marginLeft:'2%'}} className='phone-number'>{this.props.phone}</dd>
           {this.times(this.props.hours)}
         </div>
       );

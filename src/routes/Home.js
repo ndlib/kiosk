@@ -25,6 +25,7 @@ import RoomReservations from '../components/content/RoomReservations.jsx';
 import Hours from '../components/content/Hours.jsx';
 import VisitorInformation from '../components/content/VisitorInformation.jsx';
 import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
+import ReloadTimer from '../components/ReloadTimer.jsx';
 
 class Home extends Component {
 
@@ -150,7 +151,7 @@ class Home extends Component {
           <div className="social">
             <p><img src="/resources/twitter.svg" /> twitter.com/ndlibraries</p>
             <p><img src="/resources/facebook.svg" /> facebook.com/hesburghlibraries</p>
-
+            <ReloadTimer startTime={Date.now()} />
           </div>
         </Row>
       </div>

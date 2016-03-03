@@ -7,9 +7,13 @@ class Hours extends Component {
 
     constructor(props, content) {
         super(props, content);
+        this.state = {
+          activeServicePoint: null,
+        }
     }
 
     servicePoints() {
+      var hoursPage = this;
       return this.props.servicePoints.map(function(servicePoint, index){
         return (
           <ServicePoint
@@ -18,9 +22,20 @@ class Hours extends Component {
             phone={servicePoint.phone}
             hours={servicePoint.regular_hours.hours}
             key={index}
+            servicePointOnClick={code => hoursPage.servicePointOnClick(code)}
+            isOpen={hoursPage.state.activeServicePoint === servicePoint.code ? true : false}
           />
         );
       });
+    }
+
+    servicePointOnClick(code) {
+      if(this.state.activeServicePoint === code) {
+        this.setState({activeServicePoint: null});
+      } else {
+        this.setState({activeServicePoint: code});
+      }
+
     }
 
     style() {

@@ -33,7 +33,8 @@ class Home extends Component {
     this.state = {
       containerContent: DEFAULT,
       people: null,
-      servicePoints: null
+      servicePoints: null,
+      menuOpen: false,
     };
   }
 
@@ -65,7 +66,14 @@ class Home extends Component {
   }
 
   onMenuItemClick(selectedItem){
-    this.setState({containerContent: selectedItem});
+    this.setState({
+      containerContent: selectedItem,
+      menuOpen: false,
+    });
+  }
+
+  onMenuButtonClick(menu) {
+    this.setState({menuOpen: !this.state.menuOpen});
   }
 
   loadHours() {
@@ -126,17 +134,13 @@ class Home extends Component {
             </div>
           </Col>
           <Col params={ this.props.params }>
-            <div className='top-button'>
-              <KioskMenuButton
-                params={ this.props.params }
-                onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
-              >
-              </KioskMenuButton>
-            </div>
+
             <div className='bottom-button'>
               <KioskMenuButton
                 params={ this.props.params }
                 onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
+                onMenuButtonClick={e => this.onMenuButtonClick(e)}
+                menuOpen={this.state.menuOpen}
               >
               </KioskMenuButton>
             </div>

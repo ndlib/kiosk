@@ -2,6 +2,10 @@ import React, { Component, PropTypes } from 'react';
 
 class ServicePoint extends Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   times(hours) {
     return hours.map(function(time, index){
       return (
@@ -10,13 +14,23 @@ class ServicePoint extends Component {
     });
   }
 
+  handleClick(code, e){
+    this.props.servicePointOnClick(code);
+  }
+
   render() {
     if(this.props.hours && this.props.hours.length > 0) {
       return (
-        <div className="service-point panel panel-default" id={this.props.code}>
+        <div
+          className="service-point panel panel-default"
+          id={this.props.code}
+          onTouchTap={this.handleClick.bind(this, this.props.code)}
+        >
           <dt className="panel-heading" style={{fontSize:'26px', fontWeight:'bold', marginBottom:'10px'}}>{this.props.name}</dt>
-          <dd className="panel-body" style={{fontSize:'20px', marginLeft:'2%'}} className='phone-number'>{this.props.phone}</dd>
-          {this.times(this.props.hours)}
+          <div style={{display: this.props.isOpen ? 'block' : 'none'}}>
+            <dd className="panel-body" style={{fontSize:'20px', marginLeft:'2%'}} className='phone-number'>{this.props.phone}</dd>
+            {this.times(this.props.hours)}
+          </div>
         </div>
       );
     }
@@ -31,6 +45,8 @@ ServicePoint.propTypes = {
   name: PropTypes.string.isRequired,
   phone: PropTypes.string,
   hours: PropTypes.array,
+  servicePointOnClick: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired
 }
 
 

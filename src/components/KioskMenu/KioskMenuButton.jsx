@@ -17,12 +17,12 @@ class KioskMenuButton extends Component {
   }
 
   handleClick(e) {
-    this.setState({menuOpen: !this.state.menuOpen});
+    this.props.onMenuButtonClick();
   }
 
   render() {
     var menu;
-    if(this.state.menuOpen) {
+    if(this.props.menuOpen) {
       menu = (
         <KioskMenu
           params={this.props.params}
@@ -52,6 +52,8 @@ class KioskMenuButton extends Component {
 }
 KioskMenuButton.propTypes = {
   onMenuItemClick: PropTypes.func.isRequired,
+  onMenuButtonClick: PropTypes.func.isRequired,
+  menuOpen: PropTypes.bool.isRequired,
 }
 
 export default KioskMenuButton;

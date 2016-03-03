@@ -19,9 +19,8 @@ class KioskMenu extends Component {
   }
 
   handleClick(selectedItem, e){
-    e.preventDefault();
-    e.stopPropagation();
     this.props.onMenuItemClick(selectedItem);
+
   }
 
   render() {

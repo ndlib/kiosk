@@ -24,8 +24,6 @@ class ReloadTimer extends Component {
       location.reload();
     }
     this.setState({elapsed: Date.now() - start});
-
-    console.log(Date.now() - start);
   }
 
   render() {

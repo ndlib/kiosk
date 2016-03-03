@@ -41,8 +41,8 @@ class KioskMenuButton extends Component {
             onTouchTap={this.handleClick}
             backgroundColor='#ccc'
             className='pulse animated'
-            disableTouchRipple='true'
-            disableFocusRipple='true'
+            disableTouchRipple={true}
+            disableFocusRipple={true}
           >
              MENU
           </FloatingActionButton>

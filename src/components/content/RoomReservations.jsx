@@ -16,7 +16,7 @@ class RoomReservations extends Component {
 
   render() {
     return (
-      <div className='room-reservations' style={{display:"flex", flexDirection:'column', justifyContent:'center', height:'100%'}}>
+      <div className='room-reservations ' id='rooms' style={{display:"flex", flexDirection:'column', justifyContent:'center', height:'100%'}}>
         <ul>
           <li>
             <RaisedButton

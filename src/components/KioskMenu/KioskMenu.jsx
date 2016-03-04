@@ -26,10 +26,10 @@ class KioskMenu extends Component {
   render() {
 
     return (
-      <Paper>
+      <Paper className="menu">
         <Menu>
           <MenuItem
-            primaryText="Maps"
+            primaryText="Floor Maps"
             leftIcon={(<i className="material-icons">place</i>)}
             onTouchTap={this.handleClick.bind(this, MAPS)}
           />
@@ -45,12 +45,7 @@ class KioskMenu extends Component {
             onTouchTap={this.handleClick.bind(this, DIRECTORY)}
 
           />
-          <MenuItem
-            primaryText="Subject Librarians"
-            leftIcon={(<i className="material-icons">local_library</i>)}
-            onTouchTap={this.handleClick.bind(this, SUBJECTS)}
 
-          />
           <MenuItem
             primaryText="Hours"
             leftIcon={(<i className="material-icons">schedule</i>)}

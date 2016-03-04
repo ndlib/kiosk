@@ -9,7 +9,7 @@ class ServicePoint extends Component {
   times(hours) {
     return hours.map(function(time, index){
       return (
-        <dd style={{fontSize:'20px', marginLeft:'2em', textIndent:'-1em'}} className='time-slot' key={index}>{time.days}: {time.hours}</dd>
+        <dd style={{fontSize:'20px'}} className='time-slot' key={index}>{time.days}: {time.hours}</dd>
       );
     });
   }
@@ -28,7 +28,7 @@ class ServicePoint extends Component {
         >
           <dt className="panel-heading" style={{fontSize:'26px', fontWeight:'bold', marginBottom:'10px'}}>{this.props.name}</dt>
           <div style={{display: this.props.isOpen ? 'block' : 'none'}}>
-            <dd className="panel-body" style={{fontSize:'20px', marginLeft:'2%'}} className='phone-number'>{this.props.phone}</dd>
+            <dd className="panel-body" style={{fontSize:'20px'}} className='phone-number'>{this.props.phone}</dd>
             {this.times(this.props.hours)}
           </div>
         </div>

@@ -36,7 +36,7 @@ class Directory extends Component {
 
     render() {
       return (
-        <div className="directory-listing" style={this.style()}>
+        <div className="directory-listing directory" style={this.style()}>
           {this.people()}
         </div>
       );

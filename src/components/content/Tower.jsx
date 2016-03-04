@@ -13,7 +13,6 @@ class Tower extends Component {
   }
 
   handleClick(floor, e) {
-    console.log("clicked:", floor);
     if(this.props.onFloorClick) {
       this.props.onFloorClick(floor);
     }
@@ -46,7 +45,7 @@ class Tower extends Component {
         }
         primaryText={floorText}
         disabled={!this.props.clickable}
-        onTouchTap={this.handleClick.bind(floorNumber)}
+        onTouchTap={this.handleClick.bind(this, floorNumber)}
       />
     );
   }

@@ -1,24 +1,32 @@
 
 import React, { Component, PropTypes } from 'react';
+import Tower from '../content/Tower.jsx';
+import FloorMap from '../content/FloorMap.jsx';
 
 class Maps extends Component {
 
     constructor(props, content) {
-        super(props, content);
+      super(props, content);
+      this.state = {
+        activeFloor: "1"
+      }
+    }
+
+    onFloorClick(floorNumber) {
+      console.log('MAP', floorNumber);
+      this.setState({activeFloor: floorNumber});
     }
 
     render() {
       return (
         <div className="maps">
-          <h1>10th Floor</h1>
-          <div className="floor">
-            <img src="/resources/10th.floor.svg" />
-          </div>
-          <div className="key">
-            <img src="/resources/key.svg" />
-          </div>
+          <FloorMap activeFloor={this.state.activeFloor} />
           <div className="tower">
-            <img src="/resources/tower.svg" />
+            <Tower
+              activeFloor={this.state.activeFloor}
+              clickable={true}
+              onFloorClick={floorNumber => this.onFloorClick(floorNumber)}
+            />
           </div>
         </div>
       );

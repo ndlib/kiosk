@@ -48,7 +48,7 @@ class Hours extends Component {
 
     render() {
       return (
-        <div className="hours-listing" style={this.style()}>
+        <div className="hours-listing hours" style={this.style()}>
           {this.servicePoints()}
         </div>
       );

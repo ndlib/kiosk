@@ -9,8 +9,10 @@ class VisitorInformation extends Component {
 
     render() {
       return (
-        <div>
-          A bus schedule and some other stuff.
+        <div className="bus visitor">
+          <h1>Bus Schedules</h1>  
+          <img src="/resources/sweep.png" />
+          <img src="/resources/midnight.png" />
         </div>
       );
     }

@@ -52,12 +52,7 @@ class KioskMenu extends Component {
             onTouchTap={this.handleClick.bind(this, HOURS)}
 
           />
-          <MenuItem
-            primaryText="Room Reservations"
-            leftIcon={(<i className="material-icons">event</i>)}
-            onTouchTap={this.handleClick.bind(this, ROOM_RESERVATIONS)}
-
-          />
+          
           <MenuItem
             primaryText="Visitor Information"
             leftIcon={(<i className="material-icons">directions_bus</i>)}

@@ -39,7 +39,7 @@ class KioskMenuButton extends Component {
           <FloatingActionButton
             params={ this.props.params }
             onTouchTap={this.handleClick}
-            backgroundColor='#ccc'
+            backgroundColor='#2b4779'
             className='pulse animated'
             disableTouchRipple={true}
             disableFocusRipple={true}

@@ -26,6 +26,7 @@ class Maps extends Component {
               activeFloor={this.state.activeFloor}
               clickable={true}
               onFloorClick={floorNumber => this.onFloorClick(floorNumber)}
+              zoom="2"
             />
           </div>
         </div>

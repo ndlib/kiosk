@@ -8,7 +8,7 @@ module.exports = [
             main: './src/main.js'
         },
         output: {
-            path: './public/resources',
+            path: './deploy/resources',
             filename: 'bundle.js'
         },
         module: {
@@ -43,4 +43,3 @@ module.exports = [
         }
     }
 ];
-

@@ -1,6 +1,5 @@
 
 import React, { Component, PropTypes } from 'react';
-import ReactSlickDemo from './Rotator.jsx';
 
 class Default extends Component {
 

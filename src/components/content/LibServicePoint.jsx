@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-class ServicePoint extends Component {
+class LibServicePoint extends Component {
 
   constructor(props) {
     super(props);
@@ -40,7 +40,7 @@ class ServicePoint extends Component {
   }
 }
 
-ServicePoint.propTypes = {
+LibServicePoint.propTypes = {
   code: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   phone: PropTypes.string,
@@ -50,4 +50,4 @@ ServicePoint.propTypes = {
 }
 
 
-export default ServicePoint;
+export default LibServicePoint;

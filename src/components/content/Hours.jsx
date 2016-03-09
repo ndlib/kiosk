@@ -1,14 +1,14 @@
 
 import React, { Component, PropTypes } from 'react';
 
-import ServicePoint from './ServicePoint.jsx';
+import LibServicePoint from './LibServicePoint.jsx';
 
 class Hours extends Component {
 
     constructor(props, content) {
         super(props, content);
         this.state = {
-          activeServicePoint: null,
+          activeLibServicePoint: null,
         }
     }
 
@@ -16,24 +16,24 @@ class Hours extends Component {
       var hoursPage = this;
       return this.props.servicePoints.map(function(servicePoint, index){
         return (
-          <ServicePoint
+          <LibServicePoint
             code={servicePoint.code}
             name={servicePoint.name}
             phone={servicePoint.phone}
             hours={servicePoint.regular_hours.hours}
             key={index}
             servicePointOnClick={code => hoursPage.servicePointOnClick(code)}
-            isOpen={hoursPage.state.activeServicePoint === servicePoint.code ? true : false}
+            isOpen={hoursPage.state.activeLibServicePoint === servicePoint.code ? true : false}
           />
         );
       });
     }
 
     servicePointOnClick(code) {
-      if(this.state.activeServicePoint === code) {
-        this.setState({activeServicePoint: null});
+      if(this.state.activeLibServicePoint === code) {
+        this.setState({activeLibServicePoint: null});
       } else {
-        this.setState({activeServicePoint: code});
+        this.setState({activeLibServicePoint: code});
       }
 
     }

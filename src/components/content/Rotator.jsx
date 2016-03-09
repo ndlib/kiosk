@@ -13,10 +13,10 @@ var ReactSlickDemo = React.createClass({
     return (
       <div className='container'>
         <Slider {...settings}>
-          <img src='http://placekitten.com/g/400/200' />
-          <img src='http://placekitten.com/g/400/200' />
-          <img src='http://placekitten.com/g/400/200' />
-          <img src='http://placekitten.com/g/400/200' />
+          <img src='/resources/rotator/hackathon.jpg' />
+          <img src='/resources/rotator/math.tutoring.jpg' />
+          <img src='/resources/rotator/rbsc.spring.2015.jpg' />
+          <img src='/resources/rotator/ULRA.jpg' />
         </Slider>
       </div>
     );

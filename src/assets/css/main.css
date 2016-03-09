@@ -304,3 +304,13 @@ h1 {
   font-size:20px;
   color:#fff;
 }
+
+.container {
+  width:1080px;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+
+    }

@@ -3375,4 +3375,14 @@ h1 {
   font-size:20px;
   color:#fff;
 }
+
+.container {
+  width:1080px;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+
+    }
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

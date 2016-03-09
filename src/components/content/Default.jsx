@@ -10,11 +10,11 @@ class Default extends Component {
 
     render() {
       return (
-        
-        <div className="home" id="rotator">
-          
 
-          <ReactSlickDemo />
+        <div className="home" id="rotator">
+
+
+
 
 
         </div>

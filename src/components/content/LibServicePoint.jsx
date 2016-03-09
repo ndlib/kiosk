@@ -36,9 +36,8 @@ class LibServicePoint extends Component {
           >{this.props.name}</dt>
           <div style={{display: this.props.isOpen ? 'block' : 'none'}}>
             <dd
-              className="panel-body"
+              className="panel-body phone-number"
               style={{fontSize:'20px'}}
-              className='phone-number'
             >{this.props.phone}</dd>
             {this.times(this.props.hours)}
           </div>

@@ -27,7 +27,11 @@ class LibServicePoint extends Component {
           id={this.props.code}
           onTouchTap={this.handleClick.bind(this, this.props.code)}
         >
-
+          <dt className="panel-heading" style={{fontSize:'26px', fontWeight:'bold', marginBottom:'10px'}}>{this.props.name}</dt>
+          <div style={{display: this.props.isOpen ? 'block' : 'none'}}>
+            <dd className="panel-body" style={{fontSize:'20px'}} className='phone-number'>{this.props.phone}</dd>
+            {this.times(this.props.hours)}
+          </div>
         </div>
       );
     }

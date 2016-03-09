@@ -1,5 +1,6 @@
 
 import React, { Component, PropTypes } from 'react';
+import ReactSlickDemo from './Rotator.jsx';
 
 class Default extends Component {
 
@@ -13,7 +14,7 @@ class Default extends Component {
         <div className="home" id="rotator">
 
 
-
+          <ReactSlickDemo />
 
 
         </div>

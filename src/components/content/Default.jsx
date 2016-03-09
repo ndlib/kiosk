@@ -1,5 +1,6 @@
 
 import React, { Component, PropTypes } from 'react';
+import ReactSlickDemo from './Rotator.jsx';
 
 class Default extends Component {
 
@@ -9,12 +10,17 @@ class Default extends Component {
 
     render() {
       return (
-        <div className="home">
-          <img src="/resources/math.tutoring.jpg" />
+        <div className="home" id="rotator">
+          
+
+          <ReactSlickDemo />
+
 
         </div>
       );
     }
 }
+
+
 
 export default Default;

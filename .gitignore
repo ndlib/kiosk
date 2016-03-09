@@ -1,1 +1,3 @@
 node_modules/*
+public/resources/bundle.js
+public/resources/styles.css

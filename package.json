@@ -9,6 +9,7 @@
     "build-dev": "webpack --config ./build-conf/webpack-dev.config.js --progress --colors"
   },
   "dependencies": {
+    "autotrack": "^0.6.2",
     "body-parser": "1.14.1",
     "express": "4.13.3",
     "express-urlrewrite": "1.2.0",

@@ -27,6 +27,8 @@ import VisitorInformation from '../components/content/VisitorInformation.jsx';
 import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
 import ReloadTimer from '../components/ReloadTimer.jsx';
 
+require('autotrack');
+
 class Home extends Component {
 
   constructor(props) {
@@ -67,6 +69,9 @@ class Home extends Component {
   }
 
   onMenuItemClick(selectedItem){
+    ga('create', 'UA-2118378-42', 'auto');
+    ga('set', 'page', selectedItem);
+    ga('send', 'pageview');
     this.setState({
       containerContent: selectedItem,
       menuOpen: false,

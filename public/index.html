@@ -6,9 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>history.pushState({}, "entry page", location.hash.substring(1))</script>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <div id="content"></div>
     <script src="//api3.libcal.com/js/roombooking.js?002"></script>
     <script src="/resources/bundle.js"></script>
+    <script>
+      window.addEventListener("contextmenu", function(e) { e.preventDefault(); })
+    </script>
   </body>
 </html>

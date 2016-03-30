@@ -22,6 +22,7 @@
 	<rect x="23.2" y="225.1" fill="#F89B43" width="165" height="163.7"/>
 	<rect x="439" y="6.2" fill="#650D0A" width="167.8" height="123.5"/>
 	<rect x="346" y="216.5" fill="#650D0A" width="44.4" height="88.9"/>
+	<rect x="436.6" y="176.1" fill="#650D0A" width="154.2" height="131.9"/>
 	<rect x="347.4" y="306.1" fill="#939393" width="35.1" height="13.8"/>
 	<rect x="347.4" y="336.1" fill="#939393" width="35.1" height="33.5"/>
 	<text transform="matrix(1.0027 0 0 1 74.3389 322.3043)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">Fish Bowl</tspan><tspan x="15.6" y="15.6" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">106</tspan></text>
@@ -31,14 +32,14 @@
 	<text transform="matrix(1.0027 0 0 1 138.5622 22.2888)" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">115B</text>
 	<text transform="matrix(1.0027 0 0 1 6.5074 150.5168)" fill="#FFFFFF" font-family="'GillSansMT'" font-size="10">115</text>
 	<text transform="matrix(1.0027 0 0 1 29.5258 150.5168)" fill="#FFFFFF" font-family="'GillSansMT'" font-size="10">114</text>
-	<text transform="matrix(1.0027 0 0 1 474.341 66.8173)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">Center for Digital </tspan><tspan x="18.2" y="15.6" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">Scholorship</tspan></text>
-	<text transform="matrix(4.501647e-11 1.0027 -1 4.489659e-11 378.2986 238.342)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Circulation/</tspan><tspan x="6" y="13.2" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Research</tspan><tspan x="14.8" y="26.4" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Desk</tspan></text>
+	<text transform="matrix(1.0027 0 0 1 474.341 66.8173)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">Center for Digital </tspan><tspan x="19" y="15.6" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">Scholarship</tspan></text>
+	<text transform="matrix(0 1.0027 -1 0 378.2986 238.342)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Circulation/</tspan><tspan x="6" y="13.2" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Research</tspan><tspan x="14.8" y="26.4" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Desk</tspan></text>
 	<rect x="21.4" y="435.9" fill="#650D0A" width="181.6" height="154.9"/>
 	<text transform="matrix(1.0027 0 0 1 57.7722 509.4183)" fill="#FFFFFF" font-family="'GillSansMT'" font-size="13">Special Collections</text>
 	<path fill="#FFFFFF" d="M113.1,192.9"/>
 	<text transform="matrix(1.0027 0 0 1 410.3623 517.9364)"><tspan x="0" y="0" font-family="'GillSansMT'" font-size="11">Au Bon Pain</tspan><tspan x="0.4" y="13.2" font-family="'GillSansMT'" font-size="11">Café Bakery</tspan></text>
 	<text transform="matrix(1.0027 0 0 1 486.8023 466.268)"><tspan x="0" y="0" font-family="'GillSansMT'" font-size="11">William J. Carey</tspan><tspan x="10.6" y="13.2" font-family="'GillSansMT'" font-size="11">Auditorium</tspan></text>
-	<rect x="410.5" y="436.6" fill="#939393" width="30.1" height="19.1"/>
+	<text transform="matrix(1.0027 0 0 1 509.3195 234.9265)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">ILL </tspan><tspan x="-8.9" y="13.2" fill="#FFFFFF" font-family="'GillSansMT'" font-size="11">Offices</tspan></text>
 </g>
 <g id="Layer_1">
 	<g>
@@ -459,7 +460,7 @@
 				M144.6,578.5c0.3,0,0.5-0.2,0.5-0.5c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5C144.1,578.3,144.4,578.5,144.6,578.5"/>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 140.1946 578.7301)" font-family="'ArialMT'" font-size="2.0468">UP</text>
+			<text transform="matrix(1 0 0 1 140.1945 578.7301)" font-family="'ArialMT'" font-size="2.0468">UP</text>
 		</g>
 		<g>
 			
@@ -496,7 +497,7 @@
 			
 				<path fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 				M165.5,577.5c-0.3,0-0.5,0.2-0.5,0.5c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5C166,577.7,165.8,577.5,165.5,577.5"/>
-			<text transform="matrix(1 0 0 1 167.053 578.7789)" font-family="'ArialMT'" font-size="2.0468">DN</text>
+			<text transform="matrix(1 0 0 1 167.0529 578.7789)" font-family="'ArialMT'" font-size="2.0468">DN</text>
 			
 				<line fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="163.2" y1="578" x2="163.9" y2="577.2"/>
 			
@@ -558,7 +559,7 @@
 			
 				<path fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 				M164.4,586.1c-0.3,0-0.5,0.2-0.5,0.5c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5C164.9,586.3,164.6,586.1,164.4,586.1"/>
-			<text transform="matrix(1 0 0 1 165.9534 587.316)" font-family="'ArialMT'" font-size="2.0468">UP</text>
+			<text transform="matrix(1 0 0 1 165.9533 587.316)" font-family="'ArialMT'" font-size="2.0468">UP</text>
 			
 				<line fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="160.2" y1="586.6" x2="160.9" y2="585.7"/>
 			
@@ -5345,7 +5346,7 @@
 				<line fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="203.3" y1="17.4" x2="204" y2="16.6"/>
 			
 				<line fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="203" y1="17.4" x2="204" y2="17.4"/>
-			<text transform="matrix(1 0 0 1 208.6868 18.1598)" font-family="'ArialMT'" font-size="2.0468">UP</text>
+			<text transform="matrix(1 0 0 1 208.6867 18.1598)" font-family="'ArialMT'" font-size="2.0468">UP</text>
 			
 				<line fill="none" stroke="#000000" stroke-width="0.2995" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="206.7" y1="17.2" x2="207.4" y2="17.8"/>
 			

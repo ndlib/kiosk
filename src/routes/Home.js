@@ -27,7 +27,12 @@ import VisitorInformation from '../components/content/VisitorInformation.jsx';
 import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
 import ReloadTimer from '../components/ReloadTimer.jsx';
 
-require('autotrack');
+var ga = require('react-ga');
+ga.initialize('UA-2118378-42');
+
+function logPageView(selectedItem) {
+  ga.pageview(selectedItem);
+}
 
 class Home extends Component {
 
@@ -69,9 +74,7 @@ class Home extends Component {
   }
 
   onMenuItemClick(selectedItem){
-    ga('create', 'UA-2118378-42', 'auto');
-    ga('set', 'page', selectedItem);
-    ga('send', 'pageview');
+    logPageView(selectedItem);
     this.setState({
       containerContent: selectedItem,
       menuOpen: false,

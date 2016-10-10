@@ -25,6 +25,7 @@ import RoomReservations from '../components/content/RoomReservations.jsx';
 import Hours from '../components/content/Hours.jsx';
 import VisitorInformation from '../components/content/VisitorInformation.jsx';
 import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
+import KioskMenu from '../components/KioskMenu/KioskMenu.jsx';
 import ReloadTimer from '../components/ReloadTimer.jsx';
 
 var ga = require('react-ga');
@@ -130,20 +131,21 @@ class Home extends Component {
 
     return (
       <div>
-        <Row params={ this.props.params } className='top-row'>
+        <div params={ this.props.params } className='top-row'>
           <div>
-            <img src="/resources/library.logo.svg" className="logo"/>
+            <h1>INFORMATION</h1>
+            
           </div>
-        </Row>
+        </div>
         <Row params={ this.props.params }>
-          <Col params={ this.props.params }>
+          <Col params={ this.props.params } lg={10} md={10}>
             <div id="target-area">
               {this.contentContainer()}
 
             </div>
           </Col>
-          <Col params={ this.props.params }>
-
+          <Col params={ this.props.params } lg={2} md={2}>
+            
             <div className='bottom-button'>
               <KioskMenuButton
                 params={ this.props.params }
@@ -152,16 +154,21 @@ class Home extends Component {
                 menuOpen={this.state.menuOpen}
               >
               </KioskMenuButton>
+             
             </div>
+             <div  className="menunew"><KioskMenu params={this.props.params}></KioskMenu></div>
           </Col>
         </Row>
-        <Row params={ this.props.params } className='bottom-row'>
+        <div params={ this.props.params } className='bottom-row'>
           <div className="social">
+
             <p><img src="/resources/twitter.svg" /> twitter.com/ndlibraries</p>
             <p><img src="/resources/facebook.svg" /> facebook.com/hesburghlibraries</p>
             <ReloadTimer startTime={Date.now()} />
+
           </div>
-        </Row>
+           <img src="/resources/library.logo.svg" className="logo"/>
+        </div>
       </div>
     );
   }

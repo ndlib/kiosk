@@ -11,11 +11,11 @@ class FloorMap extends Component {
     switch(activeFloor) {
       case 'LL':
         floor.floorName = 'Lower Level';
-        floor.mapFile = '0th.floor.gif';
+        floor.mapFile = 'lower.level.svg';
         break;
       case '2':
         floor.floorName = 'Second Floor';
-        floor.mapFile = '2nd.floor.svg';
+        floor.mapFile = 'http://library.nd.edu/images/maps/2nd.floor.svg';
         break;
       case '3':
         floor.floorName = 'Third Floor';

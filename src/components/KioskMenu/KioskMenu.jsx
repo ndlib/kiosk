@@ -26,7 +26,7 @@ class KioskMenu extends Component {
   render() {
 
     return (
-      <Paper className="menu">
+      <div className="menu">
         <Menu>
           <MenuItem
             primaryText="Floor Maps"
@@ -60,7 +60,7 @@ class KioskMenu extends Component {
 
           />
         </Menu>
-      </Paper>
+      </div>
     );
   }
 }

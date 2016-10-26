@@ -24,7 +24,6 @@ import CallNumbers from '../components/content/CallNumbers.jsx';
 import RoomReservations from '../components/content/RoomReservations.jsx';
 import Hours from '../components/content/Hours.jsx';
 import VisitorInformation from '../components/content/VisitorInformation.jsx';
-import KioskMenuButton from '../components/KioskMenu/KioskMenuButton.jsx';
 import KioskMenu from '../components/KioskMenu/KioskMenu.jsx';
 import ReloadTimer from '../components/ReloadTimer.jsx';
 
@@ -43,8 +42,10 @@ class Home extends Component {
       containerContent: DEFAULT,
       people: null,
       servicePoints: null,
-      menuOpen: false,
     };
+    this.loadHours = this.loadHours.bind(this)
+    this.loadPeople = this.loadPeople.bind(this)
+    this.onMenuItemClick = this.onMenuItemClick.bind(this)
   }
 
   contentContainer() {
@@ -78,12 +79,7 @@ class Home extends Component {
     logPageView(selectedItem);
     this.setState({
       containerContent: selectedItem,
-      menuOpen: false,
     });
-  }
-
-  onMenuButtonClick(menu) {
-    this.setState({menuOpen: !this.state.menuOpen});
   }
 
   loadHours() {
@@ -134,7 +130,7 @@ class Home extends Component {
         <div params={ this.props.params } className='top-row'>
           <div>
             <h1>INFORMATION</h1>
-            
+
           </div>
         </div>
         <Row params={ this.props.params }>
@@ -145,18 +141,21 @@ class Home extends Component {
             </div>
           </Col>
           <Col params={ this.props.params } lg={2} md={2}>
-            
+
             <div className='bottom-button'>
-              <KioskMenuButton
-                params={ this.props.params }
-                onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
-                onMenuButtonClick={e => this.onMenuButtonClick(e)}
-                menuOpen={this.state.menuOpen}
-              >
-              </KioskMenuButton>
-             
+              <KioskMenu
+              params={this.props.params}
+              onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
+            >MENU</KioskMenu>
+
             </div>
-             <div  className="menunew"><KioskMenu params={this.props.params}></KioskMenu></div>
+            <div className='menunew'>
+              <KioskMenu
+              params={this.props.params}
+              onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
+            >MENU</KioskMenu>
+
+            </div>
           </Col>
         </Row>
         <div params={ this.props.params } className='bottom-row'>

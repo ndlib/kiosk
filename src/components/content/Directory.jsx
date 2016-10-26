@@ -1,6 +1,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import Person from './Person.jsx'
+import { CircularProgress } from 'material-ui'
 class Directory extends Component {
 
     constructor(props, content) {
@@ -8,19 +9,22 @@ class Directory extends Component {
     }
 
     people() {
-      return this.props.people.map(function(person, index){
-        return (
-          <Person
-            firstName={person.first_name}
-            lastName={person.last_name}
-            positionTitle={person.position_title}
-            location={person.contact_information.campus_address}
-            phoneNumber={person.contact_information.phone_number}
-            rowStyle={index % 2 == 0 ? 'row-odd' : 'row-even'}
-            key={index}
-          />
-        );
-      });
+      if(this.props.people) {
+        return this.props.people.map(function(person, index){
+          return (
+            <Person
+              firstName={person.first_name}
+              lastName={person.last_name}
+              positionTitle={person.position_title}
+              location={person.contact_information.campus_address}
+              phoneNumber={person.contact_information.phone_number}
+              rowStyle={index % 2 == 0 ? 'row-odd' : 'row-even'}
+              key={index}
+            />
+          );
+        });
+      }
+      return ( <CircularProgress />)
     }
 
     style() {

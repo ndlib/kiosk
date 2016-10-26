@@ -1,6 +1,6 @@
 
 import React, { Component, PropTypes } from 'react';
-
+import { CircularProgress } from 'material-ui'
 import LibServicePoint from './LibServicePoint.jsx';
 
 class Hours extends Component {
@@ -14,19 +14,22 @@ class Hours extends Component {
 
     servicePoints() {
       var hoursPage = this;
-      return this.props.servicePoints.map(function(servicePoint, index){
-        return (
-          <LibServicePoint
-            code={servicePoint.code}
-            name={servicePoint.name}
-            phone={servicePoint.phone}
-            hours={servicePoint.regular_hours.hours}
-            key={index}
-            servicePointOnClick={code => hoursPage.servicePointOnClick(code)}
-            isOpen={hoursPage.state.activeLibServicePoint === servicePoint.code ? true : false}
-          />
-        );
-      });
+      if(this.props.servicePoints) {
+        return this.props.servicePoints.map(function(servicePoint, index){
+          return (
+            <LibServicePoint
+              code={servicePoint.code}
+              name={servicePoint.name}
+              phone={servicePoint.phone}
+              hours={servicePoint.regular_hours.hours}
+              key={index}
+              servicePointOnClick={code => hoursPage.servicePointOnClick(code)}
+              isOpen={hoursPage.state.activeLibServicePoint === servicePoint.code ? true : false}
+            />
+          );
+        });
+      }
+      return ( <CircularProgress />)
     }
 
     servicePointOnClick(code) {

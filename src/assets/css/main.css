@@ -376,12 +376,12 @@ h1 {
   width: 100%;
 }
 
-.menu {
+.menu, .navigation {
   background-color: rgba(247,232,157, .6);
   border-top: solid 1px #666 !important;
 }
 
-.menu * {
+.menu *, .navigation * {
   background: transparent !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -389,11 +389,11 @@ h1 {
   padding: 0 !important;
 }
 
-.menu i {
+.menu i, .navigation i, .menu span, .navigation span  {
   display: none !important;
 }
 
-.menu a {
+.menu a, .navigation a {
   padding-left: 10px !important;
   font-family: GPCMed !important; 
   font-size: 26px !important;

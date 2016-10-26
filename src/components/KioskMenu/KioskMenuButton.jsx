@@ -10,43 +10,17 @@ import KioskMenu from './KioskMenu.jsx'
 
 class KioskMenuButton extends Component {
 
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = { menuOpen: false };
-  }
-
-  handleClick(e) {
-    this.props.onMenuButtonClick();
-  }
-
   render() {
-    var menu;
-    if(this.props.menuOpen) {
-      menu = (
-        <KioskMenu
-          params={this.props.params}
-          onMenuItemClick={this.props.onMenuItemClick}
-        >MENU</KioskMenu>
-      );
-    }
+
     return (
       <Row>
         <Col>
-          {menu}
+          <KioskMenu
+          params={this.props.params}
+          onMenuItemClick={this.props.onMenuItemClick}
+        >MENU</KioskMenu>
         </Col>
-        <Col>
-          <FloatingActionButton
-            params={ this.props.params }
-            onTouchTap={this.handleClick}
-            backgroundColor='#2b4779'
-            className='pulse animated'
-            disableTouchRipple={true}
-            disableFocusRipple={true}
-          >
-             MENU
-          </FloatingActionButton>
-        </Col>
+
 
       </Row>
     );
@@ -55,7 +29,7 @@ class KioskMenuButton extends Component {
 KioskMenuButton.propTypes = {
   onMenuItemClick: PropTypes.func.isRequired,
   onMenuButtonClick: PropTypes.func.isRequired,
-  menuOpen: PropTypes.bool.isRequired,
+ //menuOpen: PropTypes.bool.isRequired,
 }
 
 export default KioskMenuButton;

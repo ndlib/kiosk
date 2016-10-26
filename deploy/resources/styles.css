@@ -3125,20 +3125,30 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: GPMed, sans-serif;
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 
+body {
+  background: url(/resources/bg.jpg) no-repeat #fff;
+  background-size: cover;
+}
+/*
 .menu > div {
   min-width: 300px;
 }
+*/
 
-.maps, .call, .directory, .hours, #rooms, .visitor {
+.maps, .call, .directory, .hours, #rooms, .visitor, .slick-track img {
   background-color: #dddddd;
   box-shadow: 0 0 30px rgba(0,0,0,.6);
   height: 1700px !important;
   overflow: hidden;
-  width: 1080px;
-  margin-bottom: 4em;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.slick-track img {
+  display: block;
 }
 
 #target-area img {
@@ -3157,12 +3167,21 @@ html, body {
   top: 30%;
   display: none;
 }
+
+/*
 .bottom-button {
   position: absolute;
   right: 0px;
   bottom: 50%;
 }
+*/
 
+.menunew {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 16.667vw !important;
+}
 .top-button button, .bottom-button button {
   z-index: 40;
 }
@@ -3172,8 +3191,8 @@ html, body {
 }
 
 .directory-listing {
-  background: url(/resources/directory.jpg);
-  background-size: cover;
+  /*background: url(/resources/directory.jpg);
+  background-size: cover;*/
 
 }
 
@@ -3190,25 +3209,37 @@ html, body {
   background: rgba(244,244,244,.8);
 }
 
-.logo {
+/*.logo {
   position: absolute;
   bottom:0px;
   right: 0;
   padding:10px;
   width:25%;
 
+}*/
+
+.top-row h1 {
+  font-family: GPCMed;
+  font-size: 9.5vw;
+  text-align: center;
+  letter-spacing: 4.5vw;
+  color: #001E46;
+  padding: 0 0 0 3vw;
+  margin: 0 auto;
 }
 
-.top-row {
-
-
+.logo {
+  float: right;
+  width: 29vw;
+  padding-right:2vw;
+  padding-top:2vw;
 }
 
 h1 {
   text-align: center;
   margin: 0;
   font-size: 30px;
-  font-weight:bold;
+  font-weight:normal;
   color:#333;
   margin:2vw auto;
 }
@@ -3227,7 +3258,7 @@ h1 {
   position: absolute;
   right: 0;
   width: 30%;
-  top: 50%;
+  top: 67%;
   padding: 10px;
   background: rgba(244,244,244,1);
   box-shadow: 0 0 30px rgba(0,0,0,.6);
@@ -3300,6 +3331,7 @@ h1 {
   padding-left:2vw;
   padding-top:2vw;
   z-index: 1;
+  float: left;
 }
 
 .social p {
@@ -3346,7 +3378,7 @@ h1 {
 
 
 
-.animated {
+/*.animated {
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -3359,25 +3391,48 @@ h1 {
   20% {transform: scale(1)  translate(0, 0); }
   100% {transform: scale(1) translate(0, 0);  }
 }
+*/
 
-.pulse {
+.col-lg-10, .col-lg-2 {
+  padding: 0 !important;
+}
+
+.col-lg-10 .container {
+  width: 100% !important;
+}
+
+/*
+.bottom-button * {
+  background: none !important;
+  border-radius:25px 0 0 25px  !important;
+}
+
+.bottom-button .menu * {
+  background: #fff !important;
+  border-radius:0  !important;
+}
+
+.bottom-button * .pulse {
   animation-name: pulse;
   animation-duration: 10s;
 
   padding:15px !important;
-  border-radius:25% 0 0 25%  !important;
+  border-radius:25px 0 0 25px  !important;
 
   width: auto !important;
   height: auto !important;
+  overflow: visible !important;
+  background: rgba(240, 240, 240, .5) !important;
 }
+*/
 
 .pulse span {
-  font-size:20px;
-  color:#fff;
+  font-size:40px;
+  color:#000;
 }
 
 .container {
-  width:1080px;
+
 }
 
 .slick-slide {
@@ -3385,5 +3440,37 @@ h1 {
     height: 100%;
 
     }
+
+.bottom-row {
+  background-color: #2B4779;
+  float: left;
+  width: 100%;
+}
+
+.menu, .navigation {
+  background-color: rgba(247,232,157, .6);
+  border-top: solid 1px #666 !important;
+}
+
+.menu *, .navigation * {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  position: static !important;
+  padding: 0 !important;
+}
+
+.menu i, .navigation i, .menu span, .navigation span  {
+  display: none !important;
+}
+
+.menu a, .navigation a {
+  padding-left: 10px !important;
+  font-family: GPCMed !important; 
+  font-size: 26px !important;
+  border-bottom: solid 1px #666 !important;
+}
+
+
 
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

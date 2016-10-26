@@ -26,8 +26,8 @@ class KioskMenu extends Component {
   render() {
 
     return (
-      <div className="menu">
-        <Menu>
+      <div className="navigation">
+        <div>
           <MenuItem
             primaryText="Floor Maps"
             leftIcon={(<i className="material-icons">place</i>)}
@@ -59,7 +59,7 @@ class KioskMenu extends Component {
             onTouchTap={this.handleClick.bind(this, VISITOR_INFO)}
 
           />
-        </Menu>
+        </div>
       </div>
     );
   }

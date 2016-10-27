@@ -54,7 +54,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: GPMed, sans-serif;
-  /*overflow:hidden;*/
+  overflow:hidden;
 }
 
 body {
@@ -105,11 +105,11 @@ body {
 }
 */
 
-.menunew {
+.menunew, .bottom-button {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 16.667vw !important;
+  width: 16.5vw !important;
 }
 .top-button button, .bottom-button button {
   z-index: 40;
@@ -159,9 +159,9 @@ body {
 
 .logo {
   float: right;
-  width: 29vw;
-  padding-right:2vw;
-  padding-top:2vw;
+  width: 16vw;
+  padding-right:1vw;
+  padding-top:1vw;
 }
 
 h1 {
@@ -258,7 +258,7 @@ h1 {
 
 .social {
   padding-left:2vw;
-  padding-top:2vw;
+  padding-top:.5vw;
   z-index: 1;
   float: left;
 }
@@ -266,14 +266,15 @@ h1 {
 .social p {
   color:#fff;
   font-weight:bold;
-  font-size:34px;
+  font-size:20px;
   margin-top:0;
-  margin-bottom:15px;
+  margin-bottom:5px;
 
 }
 
 .social img {
-  height:40px;
+  height:25px;
+  vertical-align: middle;
 }
 
 .service-point dt {
@@ -396,7 +397,7 @@ h1 {
 .menu a, .navigation a {
   padding-left: 10px !important;
   font-family: GPCMed !important; 
-  font-size: 26px !important;
+  font-size: 24px !important;
   border-bottom: solid 1px #666 !important;
 }
 

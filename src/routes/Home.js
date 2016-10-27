@@ -149,13 +149,7 @@ class Home extends Component {
             >MENU</KioskMenu>
 
             </div>
-            <div className='menunew'>
-              <KioskMenu
-              params={this.props.params}
-              onMenuItemClick={selectedItem => this.onMenuItemClick(selectedItem)}
-            >MENU</KioskMenu>
 
-            </div>
           </Col>
         </Row>
         <div params={ this.props.params } className='bottom-row'>

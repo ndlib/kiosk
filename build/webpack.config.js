@@ -8,7 +8,7 @@ module.exports = [
             main: './src/main.js'
         },
         output: {
-            path: './deploy/resources',
+            path: './public/resources',
             filename: 'bundle.js'
         },
         devtool: 'inline-source-map',

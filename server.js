@@ -9,8 +9,8 @@ app.set('port', (process.env.PORT || 3000));
 
 // Routes for real application with React-Router
 
-app.use('/resources', express.static(path.join(__dirname, 'deploy/resources')));
-app.use('/images', express.static(path.join(__dirname, 'deploy/images')));
+app.use('/resources', express.static(path.join(__dirname, 'public/resources')));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use(rewrite('/*', '/index.html'));
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());

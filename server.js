@@ -12,7 +12,7 @@ app.set('port', (process.env.PORT || 3000));
 app.use('/resources', express.static(path.join(__dirname, 'deploy/resources')));
 app.use('/images', express.static(path.join(__dirname, 'deploy/images')));
 app.use(rewrite('/*', '/index.html'));
-app.use('/', express.static(path.join(__dirname, 'deploy')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 

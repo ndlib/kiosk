@@ -16,7 +16,6 @@ var ReactSlickDemo = React.createClass({
 
           <img src='/resources/rotator/ResidenceLibrarians.jpg' />
           <img src='/resources/rotator/spotlight-201612-birds-VERT.jpg' />
-          <img src='/resources/rotator/ConcourseOpenHouse.jpg' />
           <img src='/resources/rotator/SubjectLibrarians.jpg' />
           <img src='/resources/rotator/DD_vert-EarlyCatholicAmerica.jpg' />
           <img src='/resources/rotator/North.Entrance.jpg' />

@@ -11,17 +11,11 @@ var ReactSlickDemo = React.createClass({
       fade: true,
     }
     return (
+
       <div className='container'>
-        <Slider {...settings}>
+        <iframe src='https://library.nd.edu/kiosk/' height='100%' width='100%' frameborder='0' scrolling='no'>
+        </iframe>
 
-          <img src='/resources/rotator/ResidenceLibrarians.jpg' />
-          <img src='/resources/rotator/spotlight-201612-birds-VERT.jpg' />
-          <img src='/resources/rotator/ConcourseOpenHouse.jpg' />
-          <img src='/resources/rotator/SubjectLibrarians.jpg' />
-          <img src='/resources/rotator/DD_vert-EarlyCatholicAmerica.jpg' />
-          <img src='/resources/rotator/North.Entrance.jpg' />
-
-        </Slider>
       </div>
     );
   }

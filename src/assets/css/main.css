@@ -362,7 +362,13 @@ h1 {
 }
 
 .container {
+  height: 136rem !important;
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
+  height: 1700px !important;
+}
 
+.container iframe {
+  border: 0 none;
 }
 
 .slick-slide {

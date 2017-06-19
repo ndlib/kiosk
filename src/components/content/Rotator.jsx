@@ -15,10 +15,11 @@ var ReactSlickDemo = React.createClass({
         <Slider {...settings}>
  
           <img src='/resources/rotator/ResidenceLibrarians.jpg' />
-          <img src='/resources/rotator/spotlight-201704-cabrini-VERT.jpg' />
+          <img src='/resources/rotator/spotlight-201706-buffalo_map-VERT.jpg' />
           <img src='/resources/rotator/SubjectLibrarians.jpg' />
+          <img src='/resources/rotator/spotlight-201706-friendship_albums-VERT.jpg' />
           <img src='/resources/rotator/DD_vert-EarlyCatholicAmerica.jpg' />
-          <img src='/resources/rotator/North.Entrance.jpg' />
+          <img src='/resources/rotator/North.Entrance.jpg' /> 
 
         </Slider>
       </div>

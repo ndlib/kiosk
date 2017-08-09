@@ -362,9 +362,13 @@ h1 {
 }
 
 .container {
-
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
+  height: 1778px !important;
+  width: 1000px;
 }
-
+.container iframe {
+  border: 0 none;
+}
 .slick-slide {
     float: left;
     height: 100%;

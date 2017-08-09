@@ -12,17 +12,7 @@ var ReactSlickDemo = React.createClass({
     }
     return (
       <div className='container'>
-        <Slider {...settings}>
- 
-
-          <img src='/resources/rotator/WelcomeNewFaculty.V.jpg' /> 
-          <img src='/resources/rotator/launch.1.png' /> 
-          <img src='/resources/rotator/launch.2.png' /> 
-          <img src='/resources/rotator/launch.3.png' /> 
-          <img src='/resources/rotator/launch.4.png' /> 
-          <img src='/resources/rotator/launch.5.png' /> 
-
-        </Slider>
+        <iframe src='https://resources.library.nd.edu/kiosk/' height='100%' width='100%' frameborder='0' scrolling='no'></iframe>
       </div>
     );
   }

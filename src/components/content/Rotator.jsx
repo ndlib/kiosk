@@ -11,7 +11,7 @@ var ReactSlickDemo = React.createClass({
       fade: true,
     }
     return (
-      <div className='container'>
+      <div className='container something'>
         <iframe src='https://resources.library.nd.edu/kiosk/' height='100%' width='100%' frameborder='0' scrolling='no'></iframe>
       </div>
     );

@@ -87,13 +87,15 @@ class Home extends Component {
     $.ajax({
       context: this,
       type: 'GET',
-      url: 'https://api.library.nd.edu/1.0/locations/hours.json?auth_token=hours',
+      url: 'https://wse-websiterenovation-libndr20171103-api.library.nd.edu/monarchlibguides/hours',
       dataType: 'json',
       success: function(result){
         var servicePoints = [];
-        for(var servicePoint in result.service_points){
-          servicePoints.push(result.service_points[servicePoint]);
-        }
+
+        Object.keys(result.locations).map(function(key, index) {
+          servicePoints.push(result.locations[key]);
+        });
+
         this.setState({servicePoints: servicePoints});
       },
       error: function(request, status, thrownError) {

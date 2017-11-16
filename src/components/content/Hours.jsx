@@ -18,13 +18,13 @@ class Hours extends Component {
         return this.props.servicePoints.map(function(servicePoint, index){
           return (
             <LibServicePoint
-              code={servicePoint.code}
+              code={servicePoint.lid}
               name={servicePoint.name}
-              phone={servicePoint.phone}
-              hours={servicePoint.regular_hours.hours}
+              phone={servicePoint.contact}
+              hours={servicePoint.weeks[0]}
               key={index}
               servicePointOnClick={code => hoursPage.servicePointOnClick(code)}
-              isOpen={hoursPage.state.activeLibServicePoint === servicePoint.code ? true : false}
+              isOpen={hoursPage.state.activeLibServicePoint === servicePoint.lid}
             />
           );
         });

@@ -12,7 +12,7 @@ var ReactSlickDemo = React.createClass({
     }
     return (
       <div className='container something'>
-        <iframe src='https://resources.library.nd.edu/kiosk/' height='100%' width='100%' frameborder='0' scrolling='no'></iframe>
+        <iframe src='https://resources.library.nd.edu/kiosk/' height='100%' width='100%' frameBorder='0' scrolling='no'></iframe>
       </div>
     );
   }

@@ -44,8 +44,8 @@ class BooksBySubject extends Component {
             <ListItem onTouchTap={this.handleClick.bind(this, '11')} primaryText='Denominations (BX4000 - BX9999)' />
             <ListItem onTouchTap={this.handleClick.bind(this, '2')} primaryText='Economics (HB - HC)' />
             <ListItem onTouchTap={this.handleClick.bind(this, '8')} primaryText='Education (L)' />
-            <ListItem onTouchTap={this.handleClick.bind(this, 'LL')} primaryText='Engeneering &amp; Technology (T - except TR)' />
-            <ListItem onTouchTap={this.handleClick.bind(this, '11')} primaryText='Geneology (CS)' />
+            <ListItem onTouchTap={this.handleClick.bind(this, 'LL')} primaryText='Engineering &amp; Technology (T - except TR)' />
+            <ListItem onTouchTap={this.handleClick.bind(this, '11')} primaryText='Genealogy (CS)' />
             <ListItem onTouchTap={this.handleClick.bind(this, 'LL')} primaryText='General Works (A)' />
             <ListItem onTouchTap={this.handleClick.bind(this, '9')} primaryText='Geography (G - F)' />
             <ListItem onTouchTap={this.handleClick.bind(this, '11')} primaryText='History - Eastern Hemisphere (D - DR)' />

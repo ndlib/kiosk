@@ -87,7 +87,7 @@ class Home extends Component {
     $.ajax({
       context: this,
       type: 'GET',
-      url: 'https://wse-websiterenovation-libndr20171103-api.library.nd.edu/monarchlibguides/hours',
+      url: 'https://ovgu1rltsi.execute-api.us-east-1.amazonaws.com/prod/hours',
       dataType: 'json',
       success: function(result){
         var servicePoints = [];

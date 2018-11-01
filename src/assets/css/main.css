@@ -45,6 +45,49 @@
       url('https://www.nd.edu/assets/fonts/GalaxiePolaris-Book.svg#svgGPCMed') format('svg');
 }
 
+
+
+@font-face {font-family:GPC; font-weight:200; font-style:normal;
+src:url('https://static.nd.edu/fonts/gp-min/gpc-light.woff2') 
+format('woff2'),
+url('https://static.nd.edu/fonts/gp-min/gpc-light.woff') 
+format('woff'),
+url('https://static.nd.edu/fonts/gp-min/gpc-light.ttf') 
+format('truetype');
+}
+@font-face {font-family:GPCBook; font-weight:300; font-style:normal;
+src:url('https://static.nd.edu/fonts/gp-min/gpc-book.woff2') 
+format('woff2'),
+url('https://static.nd.edu/fonts/gp-min/gpc-book.woff') 
+format('woff'),
+url('https://static.nd.edu/fonts/gp-min/gpc-book.ttf') 
+format('truetype');
+}
+@font-face {font-family:GPCMed; font-weight:400; font-style:normal;
+src:url('https://static.nd.edu/fonts/gp-min/gpc-medium.woff2') 
+format('woff2'),
+url('https://static.nd.edu/fonts/gp-min/gpc-medium.woff') 
+format('woff'),
+url('https://static.nd.edu/fonts/gp-min/gpc-medium.ttf') 
+format('truetype');
+}
+@font-face {font-family:GPMed; font-weight:400; font-style:normal;
+src:url('https://static.nd.edu/fonts/gp-min/gp-medium.woff2') 
+format('woff2'),
+url('https://static.nd.edu/fonts/gp-min/gp-medium.woff') 
+format('woff'),
+url('https://static.nd.edu/fonts/gp-min/gp-medium.ttf') 
+format('truetype');
+}
+@font-face {font-family:GPBold; font-weight:700; font-style:normal;
+src:url('https://static.nd.edu/fonts/gp-min/gp-bold.woff2') 
+format('woff2'),
+url('https://static.nd.edu/fonts/gp-min/gp-bold.woff') 
+format('woff'),
+url('https://static.nd.edu/fonts/gp-min/gp-bold.ttf') 
+format('truetype');
+}
+
 html, body {
   background-color: #2B4779;
   font-size: 13px;

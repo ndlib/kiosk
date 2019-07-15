@@ -132,7 +132,7 @@ class Home extends Component {
         <div params={ this.props.params } className='top-row'>
           <div>
             <h1>INFORMATION</h1>
-
+            <div className='arrow'><img src="/resources/pointer.svg" className="logo"/></div>
           </div>
         </div>
         <Row params={ this.props.params }>

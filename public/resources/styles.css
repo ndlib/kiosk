@@ -3162,7 +3162,7 @@ format('truetype');
 }
 
 html, body {
-  background-color: #2B4779;
+  background-color: #0c2340;
   font-size: 13px;
   height: 1920px;
   margin: 0;
@@ -3172,7 +3172,7 @@ html, body {
 }
 
 body {
-  background: url(/resources/bg.jpg) no-repeat #fff;
+  background: url(/resources/kiosk.background-01.png) no-repeat #0c2340;
   background-size: cover;
 }
 /*
@@ -3220,11 +3220,14 @@ body {
 */
 
 .menunew, .bottom-button {
-  position: absolute;
+  position: relative;
   top: 50%;
   right: 0;
-  width: 16.5vw !important;
+  width: 100%;
 }
+
+
+
 .top-button button, .bottom-button button {
   z-index: 40;
 }
@@ -3261,14 +3264,34 @@ body {
 
 }*/
 
+.top-row {
+  height: 317px;
+}
+
 .top-row h1 {
   font-family: GPCMed;
-  font-size: 9.5vw;
+  font-size: 17.5vw;
+
   text-align: center;
-  letter-spacing: 4.5vw;
-  color: #001E46;
-  padding: 0 0 0 3vw;
+  letter-spacing: 7px;
+  color: #fff;
+  padding: 0 ;
   margin: 0 auto;
+}
+
+.arrow {
+  position: absolute;
+  border: solid #d39f10;
+  border-width: 26px 26px 0 0 ;
+  width: 87%;
+  height: 35%;
+}
+
+.arrow img {
+  position: relative;
+  width: 178px;
+  right: -135px;
+  bottom: -90%;
 }
 
 .logo {
@@ -3438,13 +3461,24 @@ h1 {
 */
 
 .col-lg-10, .col-lg-2 {
-  padding: 0 !important;
+  padding: 0px !important;
 }
 
 .col-lg-10 .container {
   width: 100% !important;
 }
 
+.col-lg-10 {
+  width: 80% !important;
+  max-width: 80% !important;
+}
+
+
+.col-lg-2 {
+  width: 20% !important;
+  max-width: 20% !important;
+  flex-basis: 20%;
+}
 /*
 .bottom-button * {
   background: none !important;
@@ -3495,28 +3529,30 @@ h1 {
   width: 100%;
 }
 
-.menu, .navigation {
-  background-color: rgba(247,232,157, .6);
-  border-top: solid 1px #666 !important;
+.navigation a {
+
 }
 
+/*
 .menu *, .navigation * {
   background: transparent !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   position: static !important;
   padding: 0 !important;
-}
+}*/
 
 .menu i, .navigation i, .menu span, .navigation span  {
   display: none !important;
 }
 
 .menu a, .navigation a {
-  padding-left: 10px !important;
+  padding-left: 20px !important;
   font-family: GPCMed !important; 
   font-size: 24px !important;
-  border-bottom: solid 1px #666 !important;
+  background-color: rgba(247,232,157, .9) !important;
+  border-radius: 25px;
+  margin: 10px;
 }
 
 

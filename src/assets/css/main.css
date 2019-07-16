@@ -147,7 +147,7 @@ body {
 */
 
 .menunew, .bottom-button {
-  position: relative;
+  position: absolute;
   top: 50%;
   right: 0;
   width: 100%;
@@ -245,7 +245,9 @@ h1 {
   padding:0 50% 0 30px;
 }
 
-
+.navigation a * {
+  padding-left: 0px !important;
+}
 
 .tower {
   position: absolute;
@@ -405,6 +407,7 @@ h1 {
   width: 20% !important;
   max-width: 20% !important;
   flex-basis: 20%;
+  position: relative;
 }
 /*
 .bottom-button * {

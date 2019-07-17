@@ -156,8 +156,9 @@ body {
   position: absolute;
   top: 40%;
   right: 0;
-  width: 100%;
+  width: 20%;
   z-index: 5000;
+
 }
 
 
@@ -416,7 +417,7 @@ h1 {
   width: 19% !important;
   max-width: 19% !important;
   flex-basis: 19%;
-  position: relative;
+
 }
 /*
 .bottom-button * {

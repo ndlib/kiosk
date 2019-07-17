@@ -138,6 +138,10 @@ body {
   display: none;
 }
 
+.row.undefined {
+  height: 1600px;
+}
+
 /*
 .bottom-button {
   position: absolute;
@@ -148,9 +152,10 @@ body {
 
 .menunew, .bottom-button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 0;
   width: 100%;
+  z-index: 5000;
 }
 
 
@@ -192,7 +197,7 @@ body {
 }*/
 
 .top-row {
-  height: 317px;
+  height: 26.7vw;
 }
 
 .top-row h1 {
@@ -210,8 +215,8 @@ body {
   position: absolute;
   border: solid #d39f10;
   border-width: 26px 26px 0 0 ;
-  width: 87%;
-  height: 35%;
+  width: 85%;
+  height: 27%;
 }
 
 .arrow img {
@@ -398,15 +403,15 @@ h1 {
 }
 
 .col-lg-10 {
-  width: 80% !important;
-  max-width: 80% !important;
+  width: 75% !important;
+  max-width: 75% !important;
 }
 
 
 .col-lg-2 {
-  width: 20% !important;
-  max-width: 20% !important;
-  flex-basis: 20%;
+  width: 25% !important;
+  max-width: 25% !important;
+  flex-basis: 25%;
   position: relative;
 }
 /*
@@ -457,6 +462,7 @@ h1 {
   background-color: #2B4779;
   float: left;
   width: 100%;
+  display: none;
 }
 
 .navigation a {

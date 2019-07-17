@@ -215,8 +215,8 @@ body {
   position: absolute;
   border: solid #d39f10;
   border-width: 26px 26px 0 0 ;
-  width: 85%;
-  height: 27%;
+  width: 87%;
+  height: 24%;
 }
 
 .arrow img {
@@ -403,15 +403,15 @@ h1 {
 }
 
 .col-lg-10 {
-  width: 75% !important;
-  max-width: 75% !important;
+  width: 80% !important;
+  max-width: 80% !important;
 }
 
 
 .col-lg-2 {
-  width: 25% !important;
-  max-width: 25% !important;
-  flex-basis: 25%;
+  width: 20% !important;
+  max-width: 20% !important;
+  flex-basis: 20%;
   position: relative;
 }
 /*

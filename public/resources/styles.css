@@ -3215,7 +3215,47 @@ body {
   height: 1600px;
 }
 
+.pulse {
+  margin:100px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #cca92c;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(255,255,255, 0.4);
+  animation: pulse 2s infinite;
+  position: absolute;
+  right: -13.8vw;
+  top: 49vw;
+}
 
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(255,255,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(255,255,255, 0);
+      box-shadow: 0 0 0 20px rgba(255,255,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
 
 /*
 .bottom-button {
@@ -3227,7 +3267,7 @@ body {
 
 .menunew, .bottom-button {
   position: absolute;
-  top: 40%;
+  top: 49%;
   right: 0;
   width: 20%;
   z-index: 5000;
@@ -3302,6 +3342,7 @@ body {
   width: 178px;
   right: -135px;
   bottom: -90%;
+  z-index: 2;
 }
 
 .logo {

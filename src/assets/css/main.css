@@ -140,6 +140,8 @@ body {
 
 .row.undefined {
   height: 1600px;
+  position: relative;
+  z-index: 1000;
 }
 
 .pulse {
